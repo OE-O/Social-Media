@@ -35,46 +35,48 @@ SoftwareType
 			Iterative		0.94
 			NameGenerator		videoSM
             }
+			{
+            Name			"Lifestyle"
+			Description		"Document your life with these types of apps."
+            Unlock          2006
+			Popularity		0.75
+			Submarkets		[ 1; 3; 1 ]
+			Retention		250
+			TimeScale		0.8
+			Iterative		0.65
+			NameGenerator		videoSM
+            }
 		]
 	Features
 		[
 			{
-			Name 		"Test feat 1"
-			Spec		System
-			Description	"This feature represents the system aspect of the product and cannot be deselected"
+			Name 		"Upload Images and Videos"
+			Spec		"2D"
+			Dependencies ["2D Editor"]
+			Description	"The core of a social media app!"
 			DevTime		3
-			CodeArt		1
-			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			CodeArt		0.75
+			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Test subfeat 1"
-					Description	"This feature requires a level 1 System designer/programmer to be finished"
+					Name		"Upload gifs."
+					Description	"Upload gifs straight from the interwebs!"
 					DevTime		3
 					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"Test subfeat 2"
-					Description	"This feature will cost the owner $1000 per day when it is released"
-					DevTime		2
+					Name		"Sell User Files"
+					Description	"Secretly sell user files to black market companies, be warned! You may be caught!"
+					DevTime		1
 					Level		3
-					CodeArt		1
-					Submarkets	0 #No submarkets needed for level 3 features
-					Script_EndOfDay "Product.DevCompany.MakeTransaction(-1000, Bills, \"Owned\");"
+					CodeArt		0
+					Submarkets 0
+					Script_EndOfDay "/Scripts/sellUserFiles.txt"
 					}
 				]
-			}
-			{
-			Name 		"Test feat 2"
-			Spec		Audio
-			Dependencies	"Audio Tool"
-			Optional	True
-			Description	"This feature can be deselected, completely removing Audio features and Audio Tool dependencies from the product"
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
 			}
 		]
 	}

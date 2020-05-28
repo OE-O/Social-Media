@@ -1,0 +1,10 @@
+if(Product.GetVar("Sell User Files", true)){
+    Product.DevCompany.MakeTransaction(3 * Product.Userbase , Sales)
+    if(Random() * Product.Userbase > 100000 * Product.Category.Popularity){
+        LaunchLawsuit("SpyingOnUsers", Product.Sum, 1);
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+		Product.Userbase = Product.Userbase * 0.15;
+		Product.KillAwareness();
+		Product.PutVar("Sell User Files", false);
+    }
+}

@@ -3,7 +3,7 @@ You
 Tube
 Video
 Picture
--scdn(stop)
+-scdn()
 Funny
 Sad
 Amazing

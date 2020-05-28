@@ -3,7 +3,7 @@ Date
 Love
 Loveur
 Dateur
--scdn(stop)
+-scdn()
 Machine
 Finder
 Creator
