@@ -1,0 +1,80 @@
+SoftwareType
+	{
+	Name			"Social Media"
+	Category		"Social Media"
+    Unlock          2005
+	Description		"Social Media is the new craze, ever since the internet come out we crave social interaction, Social Media takes this to a whole level."
+	Random			0.1
+	IdealPrice		8
+	OptimalDevTime		25
+	OSSupport		[Computer; Console;]
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ Addictive; Communal; Dark ]
+	Categories
+		[
+			{
+			Name			"Dating"
+			Description		"Find your next love!"
+            Unlock          2006
+			Popularity		0.4
+			Submarkets		[ 0; 3; 2 ]
+			Retention		185
+			TimeScale		0.8
+			Iterative		0.85
+			NameGenerator		datingSM
+			}
+            {
+            Name			"Video"
+			Description		"Upload funny videos and get trendy!"
+            Unlock          2005
+			Popularity		0.8
+			Submarkets		[ 3; 1; 2 ]
+			Retention		250
+			TimeScale		0.8
+			Iterative		0.94
+			NameGenerator		videoSM
+            }
+		]
+	Features
+		[
+			{
+			Name 		"Test feat 1"
+			Spec		System
+			Description	"This feature represents the system aspect of the product and cannot be deselected"
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Features
+				[
+					{
+					Name		"Test subfeat 1"
+					Description	"This feature requires a level 1 System designer/programmer to be finished"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Test subfeat 2"
+					Description	"This feature will cost the owner $1000 per day when it is released"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	0 #No submarkets needed for level 3 features
+					Script_EndOfDay "Product.DevCompany.MakeTransaction(-1000, Bills, \"Owned\");"
+					}
+				]
+			}
+			{
+			Name 		"Test feat 2"
+			Spec		Audio
+			Dependencies	"Audio Tool"
+			Optional	True
+			Description	"This feature can be deselected, completely removing Audio features and Audio Tool dependencies from the product"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			}
+		]
+	}
