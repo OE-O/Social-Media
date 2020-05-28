@@ -2,7 +2,7 @@ SoftwareType
 	{
 	Name			"Social Media"
 	Category		"Social Media"
-    Unlock          2005
+    Unlock          2004
 	Description		"Social Media is the new craze, ever since the internet come out we crave social interaction, Social Media takes this to a whole level."
 	Random			0.1
 	IdealPrice		8
@@ -16,7 +16,7 @@ SoftwareType
 			{
 			Name			"Dating"
 			Description		"Find your next love!"
-            Unlock          2006
+            Unlock          2004
 			Popularity		0.4
 			Submarkets		[ 0; 3; 2 ]
 			Retention		185
@@ -46,12 +46,21 @@ SoftwareType
 			Iterative		0.65
 			NameGenerator		videoSM
             }
+			Name			"Shopping"
+			Description		"Buy and sell and make friends!"
+            Unlock          2004
+			Popularity		0.75
+			Submarkets		[ 1; 3; 1 ]
+			Retention		250
+			TimeScale		0.8
+			Iterative		0.65
+			NameGenerator		shopSM
 		]
 	Features
 		[
 			{
 			Name 		"Images"
-			Spec		"2D"
+			Spec		2D
 			Dependencies ["2D Editor"]
 			Description	"The core of a social media app!"
 			DevTime		3
@@ -68,15 +77,152 @@ SoftwareType
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
+					Name "Stickers"
+					Description "Let users pop stickers onto their photos!"
+					DevTime 2
+					Level 1
+					CodeArt 1
+					Submarkets [1; 1; 0;]
+					}
+					{
+					Name "Cropping Tool"
+					Description "Allow users to cut and crop images to their hearts desire."
+					DevTime 2
+					Level 1
+					CodeArt 1
+					Submarkets [0; 1; 1;]
+					}
+					{
+					Name "Disposable Images"
+					Description "Allows the reciving user to see the image once and never again."
+					DevTime 1
+					Level 1
+					CodeArt 0.3
+					Submarkets [0; 0; 1]
+					}
+					{
+					Name "Face Masks"
+					Description "Allows the user to put face masks over detected faces"
+					DevTime 4	
+					Level 2
+					CodeArt 1
+					Submarkets [2; 1; 1;]
+					}
+					{
+					Name "Green Screen Support"
+					Description "Allows users to use their green screens to apply effects and backgrounds."
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [2; 1; 1;]
+					}
+					{
+					Name "Streaks"
+					Description "Allows users to gain streaks whenever they post or take a picture"
+					DevTime 2
+					Level 2
+					CodeArt 1
+					Submarkets [4; 1; 1;]
+					}
+					{
+					Name "Private Images"
+					Description "Allows users to post private images that only certain users can see."
+					DevTime 2
+					Level 2
+					CodeArt 0.4
+					Submarkets [1; 0; 2;]
+					}
+					{
+					Name "Profile Banners"
+					Description "Allows users to have a 'profile banner' where they can have a large image on the top of their profile"
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [0; 2; 1;]
+					}
+					{
+					Name "Text Advertisement"
+					Description "Allow users to earn money from their images, also generates you income."
+					DevTime 4
+					Level 3
+					CodeArt 1
+					Submarkets 0
+					Script_EndOfDay "/Scripts/onDayRefresh.txt"
+					}
+					{
 					Name		"Sell User Images"
 					Description	"Secretly sell user files to black market companies, be warned! You may be caught!"
 					DevTime		1
 					Level		3
 					CodeArt		0
 					Submarkets 0
-					Script_EndOfDay "/Scripts/sellUserFiles.txt"
+					Script_EndOfDay "/Scripts/onDayRefresh.txt"
 					}
 				]
+			}
+			{ 
+			Name "Video"
+			Spec Video
+			Description "let your users post moving images to their profile"
+			DevTime 4
+			CodeArt 0.75
+			Submarkets [ 2; 1; 1;]
+			Features 
+				[
+					
+				]
+			}
+			{
+			Name 		"Accounts"
+			Spec		System
+			Description	"Let the users manage their own account."
+			DevTime		2
+			CodeArt		0.75
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name "Direct Messages"
+					Description "'Hey baby, want to know how I make $10,000 grand in an hour? Head to this link: https://youtu.be/dQw4w9WgXcQ'"
+					DevTime 2
+					Level 1
+					CodeArt 0.4
+					Submarkets [1; 0; 2;]
+					}
+					{
+					Name "Custom Profile Pictures
+					Description "Allow users to upload a cool photo of themselves to be identified"
+					DevTime 3
+					Level 1
+					CodeArt 1
+					Submarkets [0; 4; 1;]
+					}
+					{
+					Name "Nicknames"
+					Description "Allow users to have a nickname, instead of their boring long names such as: Taumatawhakatangi­hangakoauauotamatea­turi Pukakapikimaunga­horonukupokaiwhen­uakitanatahu"
+					DevTime 1
+					Level 1
+					CodeArt 0.6
+					Submarkets [0; 1; 0;]
+					}
+					{
+					Name "2FA"
+					Description "Allows users to add a phone number or email address to verify their identy with."
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [0; 1; 1;]
+					}
+					{
+					Name "Security Questions"
+					Description "Get extra user information for 'security' purposes, (collect data on users but make them feel safe, you can get caught!)"
+					DevTime 2
+					Level 3
+					CodeArt 0.4
+					Submarkets [1; 0; 2;]
+					Script_EndOfDay "/Scripts/onDayRefresh.txt
+					}
+			 	]
 			}
 		]
 	}

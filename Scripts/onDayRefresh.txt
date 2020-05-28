@@ -1,0 +1,22 @@
+if(Product.GetVar("Sell User Files", true)){
+    Product.DevCompany.MakeTransaction(3 * Product.Userbase , Sales) // make transaction
+    if(Random() * Product.Userbase > 100000 * Product.Category.Popularity){ //random
+        LaunchLawsuit("SpyingOnUsers", Product.Sum, 1); //make lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase * 0.35, Product.Category); // remove fans
+		Product.Userbase = Product.Userbase * 0.15; // make 85% of the userbase leave
+		Product.KillAwareness(); // kill press awareness
+		Product.PutVar("Sell User Files", false); // remove the perk.
+    }
+}
+if(Product.GetVar("Security Questions", true)){
+    if(Random() * Product.Userbase > 200000 * Product.Category.Popularity){
+        LaunchLawsuit("SpyingOnUsers", Product.Sum, 1);
+        Product.DevCompany.AddFans(-Product.UserBase * 0.35, Product.Category);
+        Product.Userbase = Product.Userbase * 0.35
+        Product.KillAwareness();
+        Product.PutVar("Security Questions", false);
+    }
+}
+if(Product.GetVar("Advertise", true)){
+    Product.DevCompany.MakeTransaction(1.5 * Product.UserBase / 1.5, Sales)
+}
