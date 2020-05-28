@@ -50,7 +50,7 @@ SoftwareType
 	Features
 		[
 			{
-			Name 		"Upload Images and Videos"
+			Name 		"Images"
 			Spec		"2D"
 			Dependencies ["2D Editor"]
 			Description	"The core of a social media app!"
@@ -60,15 +60,15 @@ SoftwareType
 			Features
 				[
 					{
-					Name		"Upload gifs."
-					Description	"Upload gifs straight from the interwebs!"
+					Name		"Filters"
+					Description	"Let users add really cool filters to their uploads!"
 					DevTime		3
 					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"Sell User Files"
+					Name		"Sell User Images"
 					Description	"Secretly sell user files to black market companies, be warned! You may be caught!"
 					DevTime		1
 					Level		3
