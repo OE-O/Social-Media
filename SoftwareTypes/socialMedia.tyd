@@ -46,15 +46,6 @@ SoftwareType
 			Iterative		0.65
 			NameGenerator		videoSM
             }
-			Name			"Shopping"
-			Description		"Buy and sell and make friends!"
-            Unlock          2004
-			Popularity		0.75
-			Submarkets		[ 1; 3; 1 ]
-			Retention		250
-			TimeScale		0.8
-			Iterative		0.65
-			NameGenerator		shopSM
 		]
 	Features
 		[
@@ -185,7 +176,40 @@ SoftwareType
 					CodeArt 0
 					Submarkets [2; 1; 1;]
 					}
-					{}
+					{
+					Name "Green Screen Support"
+					Description "Allow users to use green screen on their videos"
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [1; 2; 1;]
+					}
+					{
+					Name "Streaks"
+					Description "Allows users to gain streaks whenever they post or take a video"
+					DevTime 2
+					Level 2
+					CodeArt 1
+					Submarkets [4; 1; 1;]
+					}
+					{
+					Name "Private Videos"
+					Description "Allows users to post private videos that only certain users can see."
+					DevTime 2
+					Level 2
+					CodeArt 0.4
+					Submarkets [1; 0; 2;]
+					}
+					{
+					Name "Advertisement"
+					Description "Allow users to earn money from their videos, also generates you income."
+					DevTime 4
+					Level 3
+					CodeArt 1
+					Submarkets 0
+					Script_EndOfDay "/Scripts/onDayRefresh.txt"
+					}
+
 				]
 			}
 			{
