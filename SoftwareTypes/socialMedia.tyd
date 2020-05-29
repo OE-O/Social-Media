@@ -153,7 +153,7 @@ SoftwareType
 			}
 			{ 
 			Name "Video"
-			Spec 2D
+			Spec 3D
 			Description "Let your users post videos, videos!"
 			DevTime 8
 			CodeArt 0.75
