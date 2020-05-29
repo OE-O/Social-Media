@@ -132,7 +132,7 @@ SoftwareType
 					Submarkets [0; 2; 1;]
 					}
 					{
-					Name "Advertisement"
+					Name "Advertisements"
 					Description "Allow users to earn money from their images, also generates you income."
 					DevTime 4
 					Level 3
@@ -169,7 +169,7 @@ SoftwareType
 					Submarkets [0; 1; 0;]
 					}
 					{
-					Name "Face Masks"
+					Name "Live Face Masks"
 					Description "Allow users to add face masks to any detected faces."
 					DevTime 2
 					Level 2
@@ -177,7 +177,7 @@ SoftwareType
 					Submarkets [2; 1; 1;]
 					}
 					{
-					Name "Green Screen Support"
+					Name "Live Green Screen Support"
 					Description "Allow users to use green screen on their videos"
 					DevTime 3
 					Level 2
@@ -185,7 +185,7 @@ SoftwareType
 					Submarkets [1; 2; 1;]
 					}
 					{
-					Name "Streaks"
+					Name "Video Streaks"
 					Description "Allows users to gain streaks whenever they post or take a video"
 					DevTime 2
 					Level 2
@@ -201,7 +201,15 @@ SoftwareType
 					Submarkets [1; 0; 2;]
 					}
 					{
-					Name "Advertisement"
+					Name "Live Videos"
+					Description "Allows users to go live to viewers/followers."
+					DevTime 2
+					Level 2
+					CodeArt 0.4
+					Submarkets [1; 4; 0;]
+					}
+					{
+					Name "Video Advertisements"
 					Description "Allow users to earn money from their videos, also generates you income."
 					DevTime 4
 					Level 3
@@ -254,13 +262,29 @@ SoftwareType
 					Submarkets [0; 1; 1;]
 					}
 					{
+					Name "Followers"
+					Description "Allows users to follow eachother."
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [0; 1; 0;]
+					}
+					{
+					Name "Friends"
+					Description "Allows users to add users as friends."
+					DevTime 3
+					Level 2
+					CodeArt 1
+					Submarkets [0; 1; 0;]
+					}
+					{
 					Name "Security Questions"
 					Description "Get extra user information for 'security' purposes, (collect data on users but make them feel safe, you can get caught!)"
 					DevTime 2
 					Level 3
 					CodeArt 0.4
 					Submarkets [1; 0; 2;]
-					Script_EndOfDay "/Scripts/onDayRefresh.txt
+					Script_EndOfDay "/Scripts/onDayRefresh.txt"
 					}
 			 	]
 			}
