@@ -12,11 +12,11 @@ if(Product.GetVar("Security Questions", true)){
     if(Random() * Product.Userbase > 200000 * Product.Category.Popularity){
         LaunchLawsuit("SpyingOnUsers", Product.Sum, 1);
         Product.DevCompany.AddFans(-Product.UserBase * 0.35, Product.Category);
-        Product.Userbase = Product.Userbase * 0.35
+        Product.Userbase = Product.Userbase * 0.35;
         Product.KillAwareness();
         Product.PutVar("Security Questions", false);
     }
 }
 if(Product.GetVar("Advertise", true)){
-    Product.DevCompany.MakeTransaction(1.5 * Product.UserBase / 1.5, Sales)
+    Product.DevCompany.MakeTransaction(1.5 * (Product.UserBase / 1.5), Sales)
 }

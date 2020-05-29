@@ -141,7 +141,7 @@ SoftwareType
 					Submarkets [0; 2; 1;]
 					}
 					{
-					Name "Text Advertisement"
+					Name "Advertisement"
 					Description "Allow users to earn money from their images, also generates you income."
 					DevTime 4
 					Level 3
@@ -162,14 +162,30 @@ SoftwareType
 			}
 			{ 
 			Name "Video"
-			Spec Video
-			Description "let your users post moving images to their profile"
-			DevTime 4
+			Spec 2D
+			Description "Let your users post videos, videos!"
+			DevTime 8
 			CodeArt 0.75
 			Submarkets [ 2; 1; 1;]
 			Features 
 				[
-					
+					{
+					Name "Audio"
+					Description "Allow users to record audio for their videos!"
+					DevTime 1
+					CodeArt 1
+					Level 1
+					Submarkets [0; 1; 0;]
+					}
+					{
+					Name "Face Masks"
+					Description "Allow users to add face masks to any detected faces."
+					DevTime 2
+					Level 2
+					CodeArt 0
+					Submarkets [2; 1; 1;]
+					}
+					{}
 				]
 			}
 			{
