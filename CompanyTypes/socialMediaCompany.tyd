@@ -1,9 +1,9 @@
 CompanyType
 	{
 	Specialization		"Social Media"
-	PerYear			0.1
-	Min			4
-	Max			21
+	PerYear				0.1
+	Min					4
+	Max					21
 	Types
 		[
 			{
@@ -11,12 +11,12 @@ CompanyType
 			Chance		1
 			}
       {
-      Software "Game"
-      Chance 1
+      Software 	"Game"
+      Chance 	1
       }
       {
-      Software "Operating System"
-      Chance 1
+      Software 	"Operating System"
+      Chance 	1
       }
 		]
 	}
