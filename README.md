@@ -1,7 +1,14 @@
 [![Programming Languages](https://cdn.oe-o.dev/Social-Media/banner.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2268560979)
 ===================
 
-[![GitHub issues](https://img.shields.io/github/issues/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/issues) [![GitHub forks](https://img.shields.io/github/forks/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/network) [![GitHub stars](https://img.shields.io/github/stars/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/stargazers) [![Join the Discord](https://img.shields.io/discord/715179833772212294?color=%237289DA&label=Discord&logo=Discord&style=for-the-badge)](https://oe-o.dev/discord)
+<div align="center">
+
+[![GitHub issues](https://img.shields.io/github/issues/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/issues)
+[![GitHub forks](https://img.shields.io/github/forks/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/network)
+[![GitHub stars](https://img.shields.io/github/stars/OE-O/Social-Media?style=for-the-badge)](https://github.com/OE-O/Social-Media/stargazers)
+[![Join the Discord](https://img.shields.io/discord/715179833772212294?color=%237289DA&label=Discord&logo=Discord&style=for-the-badge)](https://oe-o.dev/discord)
+
+</div>
 
 Snap, Chat and Record that in this all-new Social Media mod for Alpha 11, includes many features from stealing users data to creating a safe platform for users.
 
